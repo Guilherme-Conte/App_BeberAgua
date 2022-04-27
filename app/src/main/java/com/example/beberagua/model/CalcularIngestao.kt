@@ -1,6 +1,7 @@
 package com.example.beberagua.model
 
 class CalcularIngestao {
+
     private val ML_Jovem = 40.0
     private val ML_Adulto = 35.0
     private val ML_Idoso = 30.0

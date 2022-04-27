@@ -74,33 +74,20 @@
         app:layout_constraintEnd_toEndOf="@id/container_header"
         app:layout_constraintTop_toBottomOf="@id/container_header" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bd_calcular"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@drawable/bg_degrade_button"
-        android:padding="15dp"
-        android:text="@string/text_button_calcular"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_peso" />
 
     <View
         android:id="@+id/container_resultado"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginStart="73dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="73dp"
         android:background="@drawable/container_resultado_ml"
+        app:layout_constraintBottom_toTopOf="@+id/bd_calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bd_calcular" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_peso"
+        app:layout_constraintVertical_bias="0.445" />
 
     <TextView
         android:id="@+id/text_resultadoML"
@@ -115,71 +102,24 @@
         app:layout_constraintStart_toStartOf="@id/container_resultado"
         app:layout_constraintTop_toTopOf="@id/container_resultado" />
 
-
-    <TextView
-        android:id="@+id/text_minutos"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bd_calcular"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:text="@string/text_minuto"
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_alarme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/container_resultado" />
-
-    <TextView
-        android:id="@+id/text_hora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:text="@string/text_hora"
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_definir_lembrete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/container_resultado" />
-
-    <TextView
-        android:id="@+id/text_dois_pontos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_dois_pontos"
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_definir_lembrete"
-        app:layout_constraintEnd_toStartOf="@+id/text_minutos"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toEndOf="@id/text_hora"
-        app:layout_constraintTop_toBottomOf="@+id/container_resultado" />
-
-    <Button
-        android:id="@+id/bt_definir_lembrete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="45dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/text_button_lembrete"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bt_alarme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="45dp"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:text="@string/text_button_alarme"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg_degrade_button"
+        android:padding="13dp"
+        android:text="@string/text_button_calcular"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
